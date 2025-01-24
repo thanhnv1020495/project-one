@@ -633,7 +633,8 @@ header {
     /* margin-right: 36px; */
 }
 
-.footer .social-link {
+.footer .social .social-link {
+    background: #f9f9f9;
     margin-right: 16px;
     display: flex;
     width: 10px;
