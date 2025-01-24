@@ -6,6 +6,11 @@
     --primary-color--: #0f1b4c;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -46,8 +51,17 @@ a {
 
 /*  header */
 
+.fixed-header{
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 999;
+}
+
 header {
     position: relative;
+    display: flex;
+    flex-direction: column;
     background: #e6f0ff;
     height: 100vh;
 }
@@ -55,7 +69,8 @@ header {
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0;
 }
 
 .navbar ul {
